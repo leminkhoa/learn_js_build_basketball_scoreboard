@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div>
+            <img id="icon" src="media/play.png" onclick="playSong()">
+        </div>
+        <!-- Container Start  -->
+        <div class="container">
+            <!-- Home Start  -->
+            <div class="home">
+                <h3>HOME</h3>
+                <div class="scoreboard-home">
+                    <h2 id="home-score">0</h2>
+                </div>
+                <div class="buttons">
+                    <button class="plusone-btn" id="home-score-btn-1" onclick="increaseHomeScoreOne()">+ 1</button>
+                    <button class="plustwo-btn" id="home-score-btn-2" onclick="increaseHomeScoreTwo()">+ 2</button>
+                    <button class="plusthree-btn" id="home-score-btn-3" onclick="increaseHomeScoreThree()">+ 3</button>
+                </div>
+            </div>
+            <!-- Home End  -->
+
+            <!-- Guest Start  -->
+            <div class="guest">
+                <h3>GUEST</h3>
+                <div class="scoreboard-guest">
+                    <h2 id="guest-score">0</h2>
+                </div>
+                <div class="buttons">
+                    <button class="plusone-btn" id="guest-score-btn-1" onclick="increaseGuestScoreOne()">+ 1</button>
+                    <button class="plustwo-btn" id="guest-score-btn-2" onclick="increaseGuestScoreTwo()">+ 2</button>
+                    <button class="plusthree-btn" id="guest-score-btn-3" onclick="increaseGuestScoreThree()">+ 3</button>
+                </div>
+            </div>
+            <!-- Guest End  -->
+        
+        </div>
+        <!-- Container End  -->
+        
+        <audio id="mySong">
+            <source src="media/mySong.mp3" type="audio/mp3">
+        </audio>
+
+        <script src="index.js"></script>
+    </body>
+</html>
